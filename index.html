@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Task Manager</title>
+  
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+   
+    <form id="task-form">
+        <label for="task-title">Task Title:</label>
+        <input type="text" id="task-title" required autocomplete="off">
+
+        <label for="task-description">Task Description:</label>
+        <textarea id="task-description" required></textarea>
+
+        <label for="task-status">Task Status:</label>
+        <select id="task-status">
+         
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Task List</h2>
+    <ul id="task-list">
+      
+    </ul>
+    <script src="main.js"></script>
+</body>
+</html>
